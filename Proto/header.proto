@@ -1,0 +1,28 @@
+syntax ="proto3";
+
+package Proto;
+
+message UserAccountBody
+{
+        string name = 1;
+        string passwd = 2;
+}
+
+message UserPositionBody
+{
+        int32 dir = 1;
+        int32 identity = 2;
+        int32 framecount = 3;
+}
+
+message LoginResponse
+{
+        bool status = 1;
+        string responseMsg = 2;
+        int32 identity = 3;
+}
+
+message DropBody 
+{
+        int32 identity = 1;
+}
